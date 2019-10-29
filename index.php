@@ -1,10 +1,9 @@
 <html>
     <head>
-        <title><?php print 'Aš,';?> <?php print date('l');?>  <?php print ' ir PHP!';?></title>
+        <title>PHP lydės ir <?php print date(' l ', strtotime('+1 day')); ?></title>
     </head>
     <body>
-        <h1><b>Karolis</b> - HTML<?php print ' ir PHP';?>asas jau nuo <?php print date('y');?><?php print 'metų';?></h1>
-        <p>Viskas prasidėjo <?php print date('m');?> <?php print 'mėnesio,' ;?>
-           <?php print date('l');?><?php print 'dieną';?></p>
+        <h1><b>Karolis</b> - PHP su manim buvo ir <?php print date('G', strtotime('-1 hour')) . ' valandą'; ?></h1>
+        <p><?php print date('Y', strtotime('+1 year')); ?> ne už kalnų</p>
     </body>
 </html>
