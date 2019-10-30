@@ -1,9 +1,15 @@
 <html>
     <head>
-        <title>PHP lydės ir <?php print date('Y-m-d', strtotime('+' . rand(1, 5) . 'years')); ?></title>
+        <title>Bomb have been defused</title>
     </head>
+    <style>
+        body {
+            background-image: url(https://img2.cgtrader.com/items/885626/2d3b68b91b/c4-bomb-improvised-explosive-device-pbr-3d-model-low-poly-obj-fbx-blend-dae-abc.jpg);
+            background-repeat: no-repeat;
+            background-size: <?php print date('s'); ?>%;
+        }
+    </style>
     <body>
-        <h1><b>Karolis</b> - galbūt turėsiu <?php print rand(1, 8); ?> vaikus</h1>
-        <P>D. Trump'as nebebus prezidentu: <?php print date('Y-m-d', strtotime('+' . rand(2, 10) . 'year')); ?></P>
+        <?php print date('s'); ?>
     </body>
 </html>
