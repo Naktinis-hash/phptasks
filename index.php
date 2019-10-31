@@ -1,21 +1,20 @@
 <?php
-$paskola = rand(1, 100);
-$graz_1_kab = rand(201, 300);
-$graz_2_kab = rand(301, 400);
-$h1 = 'Skolos skaiciuokle';
-$h3_1 = "Jei paemei:$paskola jievru";
-$h3_2 = "Su dviem kabanciais grazinsi:$graz_1_kab";
-$h3_3 = "Su vienu kabanciu grazinsi:$graz_2_kab";
+$bin_vol = 40;
+$bin_heap_vol = rand(5, 20);
+$trash_per_day = 15;
+$days = ($bin_vol + $bin_heap_vol) / $trash_per_day;
+$days = (int)$days;
+$p = "Turima siuksline - $bin_vol litru";
+$p_2 = "Zmona nieko nesako, kol kaupas nevirsija $bin_heap_vol litru";
+$h3 = "Isvada: Nieko nedarysiu $days dienu";
 ?>
 <html>
     <head>
-        <title>Kabantys</title>
+        <title>Trash</title>
     </head>
     <body>
-        <div>
-            <h1><?php print $h1; ?></h1>
-            <h3><?php print $h3_1; ?></h3>
-            <h3><?php print $h3_2; ?></h3>
-            <h3><?php print $h3_3; ?></h3>
-        </div>
+        <h1>Siuksliu prognoze</h1>
+        <p><?php print $p; ?></p>
+        <p><?php print $p_2; ?></p>
+        <h3><?php print $h3; ?></h3>
     </body>
