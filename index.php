@@ -1,12 +1,11 @@
 <?php
-$sudas_1 = rand(1, 100);
-$sudas_2 = rand(101, 200);
-$sudas_3 = rand(201, 300);
-$sudas_4 = rand(301, 400);
+$paskola = rand(1, 100);
+$graz_1_kab = rand(201, 300);
+$graz_2_kab = rand(301, 400);
 $h1 = 'Skolos skaiciuokle';
-$h3_1 = "Jei paemei:$sudas_1";
-$h3_2 = "Su dviem kabanciais grazinsi:$sudas_3";
-$h3_3 = "Su vienu kabanciu grazinsi:$sudas_4";
+$h3_1 = "Jei paemei:$paskola jievru";
+$h3_2 = "Su dviem kabanciais grazinsi:$graz_1_kab";
+$h3_3 = "Su vienu kabanciu grazinsi:$graz_2_kab";
 ?>
 <html>
     <head>
