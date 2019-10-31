@@ -1,15 +1,19 @@
+<?php
+$img_src = 'https://www.probytes.net/wp-content/uploads/2018/01/5-1.png'
+?>
 <html>
     <head>
-        <title>Bomb have been defused</title>
+        <title>Taip</title>
+        <style>
+            .img{
+                width: 200px;
+                height: 200px;
+            }
+        </style>
     </head>
-    <style>
-        body {
-            background-image: url(https://img2.cgtrader.com/items/885626/2d3b68b91b/c4-bomb-improvised-explosive-device-pbr-3d-model-low-poly-obj-fbx-blend-dae-abc.jpg);
-            background-repeat: no-repeat;
-            background-size: <?php print date('s'); ?>%;
-        }
-    </style>
     <body>
-        <?php print date('s'); ?>
+        <img src="<?php print $img_src; ?>">
+        <img src="<?php print $img_src; ?>">
+        <img src="<?php print $img_src; ?>">
+        <img src="<?php print $img_src; ?>">
     </body>
-</html>
