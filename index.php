@@ -1,29 +1,35 @@
 <?php
-$grizai_velai = rand(0, 1);
-$grizai_isgeres = rand(0, 1);
-$kur_miegosi = 'Nemiegosi';
-if ($grizai_velai && !$grizai_isgeres) {
-    $h2_eilute = 'grizai velai';
-} elseif ($grizai_velai && $grizai_isgeres) {
-    $h2_eilute = 'grizai isgeres ir velai';
-    $kur_miegosi = 'Miegosi';
-} elseif (!$grizai_velai && $grizai_isgeres) {
-    $h2_eilute = 'Grizai isgeres';
-} elseif (!$grizai_velai && !$grizai_isgeres) {
-    $h2_eilute = 'Nieko nepadariau, nemuskit';
+$bool = true;
+$str = '1';
+$flt = 1.23;
+$int = 1;
+$str = '1.23';
+if ($bool == $int) {
+    $li_ats = 'Lygus';
+} if ($bool === $int) {
+    $li_ats = 'Identiski';
+}if ($str == $bool) {
+    $li_1_ats = 'Lygus';
+} if ($str === $bool) {
+    $li_1_ats = 'Identiski';
+}if ($flt == $str) {
+    $li_2_ats = 'Lygus';
+} if ($flt === $str) {
+    $li_2_ats = 'Identiski';
 }
-$h1 = 'Buitine skaiciuokle';
-$h2 = "Situacija: $h2_eilute";
-$h3 = "Isvada : $kur_miegosi ant sofos";
+$li = "Bool (true) ir Integer (1): $li_ats";
+$li_2 = "String (1) ir Boolean (1): $li_1_ats";
+$li_3 = "Float (1.23) ir String (1.23): $li_2_ats";
 ?>
 <html>
     <head>
-        <title>Pripiske</title>
+        <title></title>
     </head>
     <body>
-        <h1><?php print $h1; ?></h1>
-        <h2> <?php print $h2; ?></h2>
-        <h3><?php print $h3; ?></h3>
-        <img src="https://i.ytimg.com/vi/chFTjHpHAEM/mqdefault.jpg">
+        <ul>
+            <li><?php print $li; ?></li>
+            <li><?php print $li_2; ?></li>
+            <li><?php print $li_3; ?></li>
+        </ul>
     </body>
 </html>
