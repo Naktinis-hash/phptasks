@@ -1,35 +1,39 @@
 <?php
-$bool = true;
-$str = '1';
-$flt = 1.23;
-$int = 1;
-$str = '1.23';
-if ($bool == $int) {
-    $li_ats = 'Lygus';
-} if ($bool === $int) {
-    $li_ats = 'Identiski';
-}if ($str == $bool) {
-    $li_1_ats = 'Lygus';
-} if ($str === $bool) {
-    $li_1_ats = 'Identiski';
-}if ($flt == $str) {
-    $li_2_ats = 'Lygus';
-} if ($flt === $str) {
-    $li_2_ats = 'Identiski';
+$sunny = rand(0, 1);
+if ($sunny) {
+    $h1 = 'Sauleta';
+    $class = 'bg-sunny';
+} else {
+    $h1 = 'Debesuota su lietum';
+    $class = 'bg-rainy';
 }
-$li = "Bool (true) ir Integer (1): $li_ats";
-$li_2 = "String (1) ir Boolean (1): $li_1_ats";
-$li_3 = "Float (1.23) ir String (1.23): $li_2_ats";
 ?>
 <html>
     <head>
-        <title></title>
+        <title><?php print $title; ?></title>
     </head>
+    <style>
+        .content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .bg-img {
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+        }
+        .bg-sunny {
+            background-image: url("https://images.vexels.com/media/users/3/145134/isolated/preview/46b65a02ff99e7bb4e84d4d3d627a729-sun-sharp-beams-icon-by-vexels.png");
+        }
+        .bg-rainy {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGJheJPOzKdEI92PRAjtuz8S7a9YU-UZl1awnwyyEFdWe8V_Ju&s");
+        }
+    </style>
     <body>
-        <ul>
-            <li><?php print $li; ?></li>
-            <li><?php print $li_2; ?></li>
-            <li><?php print $li_3; ?></li>
-        </ul>
+        <div class="content">
+            <div class="bg-img <?php print $class; ?>"></div>
+            <h1><?php print $h1; ?></h1>
+        </div>
     </body>
 </html>
