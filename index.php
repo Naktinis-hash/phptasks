@@ -2,6 +2,7 @@
 $days = 365;
 $pack_price = 3.50;
 $count_ttl = 0;
+$time_per_cig = 5;
 
 for ($d = 1; $d <= $days; $d++) {
     $weekday = date('N', strtotime('+' . $d . 'day'));
@@ -17,6 +18,8 @@ for ($d = 1; $d <= $days; $d++) {
         $count_ttl += $cig_mon_fri;
     }
 }
+
+$time_total = ($count_ttl*$time_per_cig)/60;
 $price_ttl = ceil($count_ttl / 20) * $pack_price;
 $h2 = "Per $days dienas, surukysiu $count_ttl cigareciu uz $price_ttl";
 $title = 'Dumai';
@@ -29,5 +32,6 @@ $h1 = 'Mano dumu skaiciuokle';
     <body>
         <h1><?php print $h1; ?></h1>
         <h2><?php print $h2; ?></h2>
+        <h3><?php print $time_total; ?></h3>
     </body>
 </html>
