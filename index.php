@@ -6,10 +6,10 @@ $count_ttl = 0;
 for ($d = 1; $d <= $days; $d++) {
     $weekday = date('N', strtotime('+' . $d . 'day'));
 
-    if ($day_of_week == 7) {
+    if ($weekday == 7) {
         $cig_sun = rand(1, 3);
         $count_ttl += $cig_sun;
-    } elseif ($day_of_week == 6) {
+    } elseif ($weekday == 6) {
         $cig_sat = rand(10, 20);
         $count_ttl += $cig_sat;
     } else {
