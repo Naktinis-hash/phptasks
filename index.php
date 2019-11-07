@@ -1,46 +1,34 @@
 <?php
-ini_set('xdebug.var_display_max_depth', '10');
-ini_set('xdebug.var_display_max_children', '256');
-ini_set('xdebug.var_display_max_data', '1024');
 
+//Skaiciuojame nuo 4 kegliu eiles, tada 3kegliu ir t.t
 $array = [
+    //Neprivemtas 
     [
         [
-            'produktas' => 'kiausiniai',
-            'kiekis' => 3,
+            'skyle1' => true,
+            'skyle2' => false,
+            'skyle3' => false,
+            'skyle4' => true,
         ],
         [
-            'produktas' => 'grietine',
-            'kiekis' => 1,
+            'skyle1' => false,
+            'skyle2' => false,
+            'skyle3' => true,
         ],
         [
-            'produktas' => 'jogurtas',
-            'kiekis' => 2,
+            'skyle1' => false,
+            'skyle2' => true,
         ],
         [
-             'produktas' => 'zuvis',
-             'kiekis' => 0,
+            'skyle1' => true,
         ],
     ],
+    //Privemtas 
     [
         [
-            'produktas' => 'pienas',
-            'kiekis' => 1,
-        ],
-        [
-            'produktas' => 'kefyras',
-            'kiekis' => 0,
-        ],
-        [
-            'produktas' => 'degtine',
-            'kiekis' => 2,
-        ],
-        [
-            'produktas' => 'kecupas',
-            'kiekis' => 2,
+            'skyles' => 'Nenaudojamos del techniniu problemu'
         ],
     ],
-     
 ];
 var_dump($array);
 
