@@ -1,20 +1,32 @@
 <?php
-$pusryciai = [
-    [
-        'pavadinimas' => 'kiausiniai',
-        'kiekis' => 2,
-        'dydis' => 'didellis'
+$pjuklas = [
+    ['individas' => [
+        'vardas' => 'Petras',
+        'pavarde' => 'Pizdys'
     ],
-    [
-        'pavadinimas' => 'baklazanas',
-        'kiekis' => 1,
-        'dydis' => 'mazas'
+    'zudymo irankis' => [
+        'koks' => 'Prapistas',
+        'daiktas' => 'telefonas'
     ],
-    [
-        'pavadinimas' => 'grietines indelis',
-        'kiekis' => 1,
-        'dydis' => 'didelis'
+],       
+    ['individas' => [
+        'vardas' => 'Tomas',
+        'pavarde' => 'Ablomas'
+    ],
+    'zudymo irankis' => [
+        'koks' => 'naudojamas',
+        'daiktas' => 'buljonas'
+    ],
+],        
+    ['individas' => [
+        'vardas' => 'Ana',
+        'pavarde' => 'Shitkova'
+    ],
+    'zudymo irankis' => [
+        'koks' => 'pasibaiges',
+        'daiktas' => 'sikpopierius'
     ]
+],        
 ];
-var_dump($pusryciai);
+var_dump($pjuklas);
  
