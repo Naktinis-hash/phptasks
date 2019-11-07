@@ -1,22 +1,14 @@
 <?php
 
 $array = [
-    'spalvos' => [
-        'Nesviecia' => 0,
-        'Zalia' => 1,
-        'Raudona' => 2,
-        'Geltona' => 3,
+    'aplinka' => [
+        'laikas' => date('o-F-d'),
+        'vieta' => 'New York',
     ],
-    'Kubas' => [
-        [1,1,1,1,1,1,1,1],
-        [1,3,3,3,3,3,3,1],
-        [1,3,2,2,2,2,3,1],
-        [1,3,2,3,3,2,3,1],
-        [1,3,2,3,3,2,3,1],
-        [1,3,2,2,2,2,3,1],
-        [1,3,3,3,3,3,3,1],
-        [1,1,1,1,1,1,1,1],
-    ]
+    'zmogus' => [
+        'virginity' => false,
+        'drunk' => true,
+    ],
 ];
 var_dump($array);
 
