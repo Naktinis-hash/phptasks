@@ -16,13 +16,5 @@ $pusryciai = [
         'dydis' => 'didelis'
     ]
 ];
-var_dump($pusryciai)
-?>
-<html>
-    <head>
-        <title>Loops</title>
-    </head>
-    <body>
-
-    </body>
-</html>   
+var_dump($pusryciai);
+ 
