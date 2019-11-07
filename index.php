@@ -8,22 +8,22 @@ $array = [
             'busenas' => 'Neprivemtas',
         ],
         '1 eile' => [
-            'skyle1' => true,
-            'skyle2' => false,
-            'skyle3' => false,
-            'skyle4' => true,
+            1 => true,
+            2 => false,
+            3 => false,
+            4 => true,
         ],
-        '2 eile' =>[
-            'skyle1' => false,
-            'skyle2' => false,
-            'skyle3' => true,
+        '2 eile' => [
+            1 => false,
+            2 => false,
+            3 => true,
         ],
         '3 eile' => [
-            'skyle1' => false,
-            'skyle2' => true,
+            1 => false,
+            2 => true,
         ],
         '4 eile' => [
-            'skyle1' => true,
+            1 => true,
         ],
     ],
     //Privemtas 
@@ -31,23 +31,23 @@ $array = [
         [
             'busena' => 'Privemtas',
         ],
-                [
-            'skyle1' => false,
-            'skyle2' => false,
-            'skyle3' => false,
-            'skyle4' => false,
+        [
+            1 => false,
+            2 => false,
+            3 => false,
+            4 => false,
         ],
         [
-            'skyle1' => false,
-            'skyle2' => false,
-            'skyle3' => false,
+            1 => false,
+            2 => false,
+            3 => false,
         ],
         [
-            'skyle1' => false,
-            'skyle2' => false,
+            1 => false,
+            2 => false,
         ],
         [
-            'skyle1' => false,
+            1 => false,
         ],
     ],
 ];
