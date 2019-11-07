@@ -7,12 +7,12 @@ $pusryciai = [
     ],
     [
         'pavadinimas' => 'baklazanas',
-        'kiekis' => '1',
+        'kiekis' => 1,
         'dydis' => 'mazas'
     ],
     [
         'pavadinimas' => 'grietines indelis',
-        'kiekis' => 'vienas',
+        'kiekis' => 1,
         'dydis' => 'didelis'
     ]
 ];
