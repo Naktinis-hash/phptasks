@@ -1,14 +1,11 @@
 <?php
 
-$array = [
-    'aplinka' => [
-        'laikas' => date('o-F-d'),
-        'vieta' => 'New York',
-    ],
-    'zmogus' => [
-        'virginity' => false,
-        'drunk' => true,
-    ],
-];
-var_dump($array);
+$date = date('Y-m-d H:i:s');
 
+?>
+
+<html>
+    <body>
+        <p> <?php print $date ?> : Karolis grizo i PHPFIGHTCLUB'a!</p>
+    </body>
+</html>
